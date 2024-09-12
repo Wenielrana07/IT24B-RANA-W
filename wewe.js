@@ -70,7 +70,7 @@ student4.addGrade(90);
 student4.addGrade(95);
 student5.addGrade(89);
 
-// Display student information
+
 student1.displayInfo();
 console.log(); 
 student2.displayInfo();
