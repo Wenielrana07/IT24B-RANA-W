@@ -8,10 +8,25 @@
 
     <title>applet 1 my gallery</title>
     <style>
-        .applet-container{
-            margin-top: 1rem;
-            margin-left: 2rem;
-        }
+        .applet-flex-container{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap; 
+}
+.applet-flex-container > div{
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+.applet-card{
+    width: 18rem;
+    height: 12rem;
+    margin-top: 50px;
+
+}
+.card{
+    margin-top: 5%;
+}
     </style>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -43,6 +58,17 @@
     </div>
 </nav>
 <body>
+    <div class="applet-container">
+        <h3>my gallery</h3>
+        <h1 id="displayText">Your text will appear here</h1>
+        <input type="text" id="textbox" placeholder="Type something here..." oninput="updateDisplay()">
+        <br>
+        <br>
+    
+        <h3>Click Button Event</h3>
+        <button class="btn btn-primary" onclick="showAlert()">Display Alert</button>
+    </div>
+   
     
 </body>
 </html>
