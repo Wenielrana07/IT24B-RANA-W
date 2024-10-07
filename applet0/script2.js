@@ -35,4 +35,5 @@ const myMap = new LeafletMap('map', [8.4003566, 124.8780386], 16);
 myMap.addMarker (8.4003566, 124.8780386, 'My home');
 */
 
-myMap.loadMarkersFromJson('applet2.json');
+myMap.addMarker(8.4003566, 124.8780386, 'My home');
+
